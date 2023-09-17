@@ -5,16 +5,20 @@
 
 # https://github.com/toboshii/hajimari
 hajimari:
-  enabled: false
+  # defualt is false
+  enabled: true
 
 # https://github.com/grafana/grafana
 grafana:
-  enabled: false
-  # password: # password for `admin` user
+  # defualt is false and no password
+  enabled: true
+  # password for `admin` user
+  password: temp
 
 # https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack
 kube_prometheus_stack:
-  enabled: false
+  # defualt is false
+  enabled: true
 
 # https://github.com/kubernetes/dashboard
 kubernetes_dashboard:
@@ -45,7 +49,9 @@ system_upgrade_controller:
 
 # https://github.com/morphy2k/rss-forwarder
 discord_template_notifier:
+  # defualt is false with no webhook
   # Will post commits from the template repository to the specified discord channel
   # so it's easier to keep track of changes.
-  enabled: false
-  webhook_url: # Discord webhook url
+  enabled: true
+  # Discord webhook url
+  webhook_url: https://discord.com/api/webhooks/1152377680537325680/Kz1MXnYmffugTv9bXjOguHA3pS7ZPCaCtYkJsvz2awS7lQwZnNA7e02qcCDpjJAcfWLG
